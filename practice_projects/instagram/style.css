@@ -61,7 +61,7 @@
 }
 
 .story_border {
-    padding: 4px;
+    padding: 2px;
     background: linear-gradient(135deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
 
 }
@@ -249,8 +249,8 @@ hr {
 }
 
 .stories .story img {
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     border: 2px solid white;
     object-fit: cover;
 
@@ -301,8 +301,8 @@ hr {
 }
 
 .card_profile {
-    width: 33px;
-    height: 33px;
+    width: 40px !important;
+    height: 40px !important;
 }
 
 .card_profile-name {
