@@ -74,7 +74,7 @@
 
 }
 
-body {
+.content-wrapper {
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
@@ -116,6 +116,11 @@ body {
     font-family: var(--main-font);
     text-align: center;
 
+}
+
+.logo i {
+    font-size: 2rem;
+    display: none;
 }
 
 .nav {
@@ -325,8 +330,9 @@ hr {
 
 .card .card-img-container {
 
-    width: 500px;
-    height: 80vh;
+    width: 100%;
+    /* height: 80vh; */
+    /* aspect-ratio: 1/1; */
     background-color: #000;
     overflow: hidden;
     border-radius: 2px;
@@ -338,6 +344,7 @@ hr {
 
 .card .card-img-container img {
     width: 100%;
+    aspect-ratio: 1/1;
 
 
 }
@@ -485,4 +492,97 @@ footer p {
     color: rgba(128, 128, 128, 0.473);
     margin-top: 15px;
     text-transform: uppercase;
+}
+
+/* Responsive ness  */
+
+@media only screen and (max-width:1080px) {
+    .right_side {
+        display: none;
+    }
+
+    .feed {
+        width: 100%;
+        margin-left: 15vw;
+        margin-right: 10vw;
+    }
+
+    .logo i {
+        display: block;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    nav ul li span {
+        display: none;
+    }
+
+    .side_bar {
+        width: 10vw;
+    }
+
+    .cards {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:680px) {
+
+    .side_bar {
+        width: 100%;
+        height: 10vh;
+        background-color: white;
+        position: fixed;
+        top: auto;
+        bottom: 0;
+
+    }
+
+    .side_bar .side_bar__logo {
+        display: none;
+    }
+
+    .bottom {
+        display: none;
+    }
+
+    .top ul {
+        display: flex;
+    }
+
+    .feed {
+        margin: 20px 0;
+    }
+
+    .cards {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .top ul li.notification,
+    .top ul li.search {
+        display: none;
+    }
+
+    .nav {
+        /* width: 100vw; */
+    }
+
+    .feed_type {
+        position: fixed;
+        background: white;
+        width: 100%;
+        height: 8vh;
+        top: 0;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+        padding: 10px;
+    }
+
+    .stories {
+        margin-top: 7vh;
+    }
+
+
 }
