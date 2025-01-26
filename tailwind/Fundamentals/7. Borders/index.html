@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Borders</title>
+</head>
+
+<body>
+  <!-- Border Width & Colors -->
+  <!-- https://tailwindcss.com/docs/border-width -->
+  <div class="bg-blue-500 w-1/4 m-10 p-5 border-4 border-green-100">
+    <div class="w-96 m-3 w-full border-4">border width</div>
+    <div class="w-96 m-3 w-full border-4 border-red-500">border color</div>
+    <div class="w-96 m-3 w-full border-x-4 border-black">border x axis</div>
+    <div class="w-96 m-3 w-full border-y-4 border-black">border y axis</div>
+  </div>
+  <!-- Border Radius -->
+  <!-- https://tailwindcss.com/docs/border-radius -->
+  <div class="border-2 border-green-100 m-10">
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded">BOrder rounded</div>
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded-lg">BOrder rounded</div>
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded-xl">BOrder rounded</div>
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded-3xl">BOrder rounded</div>
+    <div class="w-96 m-3 p-5 bg-teal-200 rounded-full">BOrder rounded</div>
+  </div>
+  <!-- Specific Sides -->
+  <div class="w-96 m-3 p-5 bg-teal-200 rounded-t-xl">BOrder top rounded</div>
+  <div class="w-96 m-3 p-5 bg-teal-200 rounded-r-full">BOrder top rounded</div>
+  <div class="w-96 m-3 p-5 bg-teal-200 rounded-tr-full">BOrder top rounded</div>
+  <div class="w-96 m-3 p-5 bg-teal-200 rounded-bl-full">BOrder top rounded</div>
+</body>
+
+</html>
