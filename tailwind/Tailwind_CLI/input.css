@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer base{
+    a{
+        @apply text-green-500 underline;
+    }
+}
+
+@layer components{
+    .menu-button{
+        @apply bg-green-500 p-5 text-white;
+    }
+}
+
+@layer utilities{
+    .text-green-500{
+        color:blue;
+        background:whitesmoke;
+    }
+}
