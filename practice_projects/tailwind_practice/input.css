@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer components{
+    .burger span{
+        @apply bg-black py-[2px] px-4 m-1;
+    }
+    .btn-primary{
+        @apply uppercase bg-amber-400 text-indigo-500 text-[0.8rem] py-2 px-3 rounded-4xl;
+    }
+}
+@layer base{
+    h1{
+    
+    }
+
+}
+@layer utilities{
+    .text-green-500{
+        
+    }
+
+}
